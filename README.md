@@ -11,7 +11,7 @@
 <b>👋 CHÀO BẠN</b></br>
 - 🔭 Mình là coder về <b>những dự án bot telegram</b><br>  
 - 🌱 Lĩnh vực thích nghiên cứu: <b>bot crypto về các sàn giao dịch</b><br>  
-- 💬 Mình hay code: </b>Python, Telebot, C++, APIs</b><br>  
+- 💬 Mình hay code: <b>Python, Telebot, C++, APIs</b><br>  
 </p>
 
 ---
