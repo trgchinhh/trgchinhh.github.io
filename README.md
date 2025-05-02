@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<h1 align="center">Hi 👋, Mình là Chinh</h1>
+<h1 align="center">👋, Mình tên Chinh</h1>
 <h3 align="center">Là sinh viên trường STU-VN</h3>
 
 <p align="center">
@@ -45,11 +45,11 @@ Here are some ideas to get you started:
 <h2>📈 GitHub Stats</h2>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=radical" alt="yourusername's GitHub stats"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=trgchinhh&show_icons=true&theme=radical" alt="trgchinhh's GitHub stats"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=radical"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=trgchinhh&layout=compact&theme=radical"/>
 </p>
 
 ---
