@@ -1,6 +1,3 @@
-<h1 align="center">NGUYỄN TRƯỜNG CHINH</h1>
-
----
 <p align="center">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="" alt="Coding gif"/>
 </p>
