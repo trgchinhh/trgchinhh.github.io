@@ -1,38 +1,23 @@
-<!--## Hi there 👋
+<h1 align="center">Nguyễn Trường Chinh</h1>
 
-**trgchinhh/trgchinhh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-<h1 align="center">👋, Mình tên Chinh</h1>
-<h3 align="center">Là sinh viên trường STU-VN</h3>
-
+---
 <p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="300" alt="Coding gif"/>
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="" alt="Coding gif"/>
 </p>
-
-- 🔭 Mình là coder về **những dự án bot telegram**
-
-- 🌱 Những lĩnh vực mình thích nghiên cứu là **bot crypto về các sàn giao dịch**
-
-- 💬 Mình hay code **Python, Telebot, C++, APIs**
-
-- 📫 Liên hệ qua email: **chinhcuber@gmail.com**
 
 ---
 
-<h2>🛠 Languages and Tools</h2>
-<p align="left">
+<p align="center">
+<b>👋 CHÀO BẠN</b></br>
+- 🔭 Mình là coder về <b>những dự án bot telegram</b><br>  
+- 🌱 Lĩnh vực thích nghiên cứu: <b>bot crypto về các sàn giao dịch</b><br>  
+- 💬 Mình hay code: </b>Python, Telebot, C++, APIs</b><br>  
+</p>
+
+---
+
+<h2 align = "center">🛠 Kỹ năng</h2>
+<p align="center">
   <img src="https://img.shields.io/badge/-Python-333?style=for-the-badge&logo=python&logoColor=yellow"/>
   <img src="https://img.shields.io/badge/-C++-333?style=for-the-badge&logo=c%2B%2B&logoColor=blue"/>
   <img src="https://img.shields.io/badge/-Telegram Bot-333?style=for-the-badge&logo=telegram&logoColor=white"/>
@@ -42,31 +27,38 @@ Here are some ideas to get you started:
 
 ---
 
-<h2>📈 GitHub Stats</h2>
+<div align="center">
+<table>
+  
+| Số liệu github              | Ngôn ngữ thường dùng |
+:-:|:-:
+[![Stats](https://acedev003-readme-stats.vercel.app/api?username=trgchinhh&show_icons=true&theme=radical&count_private=true&hide=issues,contribs)](https://github.com/trgchinhh)|[![Langs](https://acedev003-readme-stats.vercel.app/api/top-langs/?username=trgchinhh&layout=compact&theme=radical)](https://github.com/trgchinhh)
+</table>
+  </div>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=trgchinhh&show_icons=true&theme=radical" alt="trgchinhh's GitHub stats"/>
-</p>
+###
+[![Contributions](https://fabianocouto-activity-graph.vercel.app/graph/?username=trgchinhh&theme=react-dark)](https://github.com/trgchinhh)
 
+---
+
+<h2 align="center">📫 Liên hệ</h2>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=trgchinhh&layout=compact&theme=radical"/>
+  📧 <b>Gmail</b>: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chinhcuber@gmail.com" target="_blank" rel="noopener noreferrer">chinhcuber@gmail.com</a><br>
+  🎓 <b>Student Email</b>: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dh52400374@student.stu.edu.vn" target="_blank" rel="noopener noreferrer">dh52400374@student.stu.edu.vn</a><br>
+  🌐 <b>Portfolio</b>: <a href="https://trgchinhh.github.io/web/" target="_blank" rel="noopener noreferrer">trgchinh.github.io</a>
 </p>
 
 ---
 
-<h2>🏆 GitHub Trophies</h2>
+<h2 align = "center">🌐 Mạng xã hội</h2>
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=trgchinhh&theme=darkhub&no-frame=true&no-bg=true&margin-w=4"/>
-</p>
-
----
-
-<h2>🌐 Connect with me</h2>
-<p align="left">
-  <a href="https://github.com/trgchinhh" target="blank">
-    <img align="center" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+  <a href="https://github.com/trgchinhh" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-  <a href="mailto:chinhcuber@gmail.com" target="blank">
-    <img align="center" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  <a href="https://t.me/trgchinhh" target="_blank">
+    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
+  </a>
+  <a href="https://facebook.com/trgchinhh" target="_blank">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
   </a>
 </p>
