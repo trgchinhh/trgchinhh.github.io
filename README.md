@@ -13,22 +13,21 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-<h1 align="center">Hi 👋, I'm YourName</h1>
-<h3 align="center">A passionate developer from Vietnam 🇻🇳</h3>
+
+<h1 align="center">Hi 👋, Mình là Chinh</h1>
+<h3 align="center">Là sinh viên trường STU-VN</h3>
 
 <p align="center">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="300" alt="Coding gif"/>
 </p>
 
-- 🔭 I’m currently working on **a Telegram bot project**
+- 🔭 Mình là coder về **những dự án bot telegram**
 
-- 🌱 I’m currently learning **Machine Learning, Trading Bot, and Automation**
+- 🌱 Những lĩnh vực mình thích nghiên cứu là **bot crypto về các sàn giao dịch**
 
-- 💬 Ask me about **Python, Telebot, C++, APIs**
+- 💬 Mình hay code **Python, Telebot, C++, APIs**
 
-- 📫 How to reach me: **your.email@gmail.com**
-
-- ⚡ Fun fact: I often code with lo-fi music in the background 🎧
+- 📫 Liên hệ qua email: **chinhcuber@gmail.com**
 
 ---
 
@@ -37,9 +36,9 @@ Here are some ideas to get you started:
   <img src="https://img.shields.io/badge/-Python-333?style=for-the-badge&logo=python&logoColor=yellow"/>
   <img src="https://img.shields.io/badge/-C++-333?style=for-the-badge&logo=c%2B%2B&logoColor=blue"/>
   <img src="https://img.shields.io/badge/-Telegram Bot-333?style=for-the-badge&logo=telegram&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-APIs-333?style=for-the-badge&logo=linux"/>
   <img src="https://img.shields.io/badge/-CMD-333?style=for-the-badge&logo=windows-terminal&logoColor=white"/>
 </p>
-
 
 ---
 
@@ -64,10 +63,10 @@ Here are some ideas to get you started:
 
 <h2>🌐 Connect with me</h2>
 <p align="left">
-  <a href="https://github.com/yourusername" target="blank">
+  <a href="https://github.com/trgchinhh" target="blank">
     <img align="center" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-  <a href="mailto:your.email@gmail.com" target="blank">
+  <a href="mailto:chinhcuber@gmail.com" target="blank">
     <img align="center" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
 </p>
