@@ -1,4 +1,4 @@
-<h1 align="center">Nguyễn Trường Chinh</h1>
+<h1 align="center">NGUYỄN TRƯỜNG CHINH</h1>
 
 ---
 <p align="center">
