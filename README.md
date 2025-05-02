@@ -30,11 +30,12 @@
 <div align="center">
 <table>
   
-| Số liệu github              | Ngôn ngữ thường dùng |
-:-:|:-:
-[![Stats](https://acedev003-readme-stats.vercel.app/api?username=trgchinhh&show_icons=true&theme=radical&count_private=true&hide=issues,contribs)](https://github.com/trgchinhh)|[![Langs](https://acedev003-readme-stats.vercel.app/api/top-langs/?username=trgchinhh&layout=compact&theme=radical)](https://github.com/trgchinhh)
+| Số liệu github | Ngôn ngữ thường dùng |
+|:-:|:-:|
+| [![Stats](https://github-readme-stats.vercel.app/api?username=trgchinhh&show_icons=true&theme=radical&hide=issues,contribs)](https://github.com/trgchinhh) | [![Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=trgchinhh&layout=compact&theme=radical)](https://github.com/trgchinhh) |
+
 </table>
-  </div>
+</div>
 
 ###
 [![Contributions](https://fabianocouto-activity-graph.vercel.app/graph/?username=trgchinhh&theme=react-dark)](https://github.com/trgchinhh)
