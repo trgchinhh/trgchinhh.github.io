@@ -32,7 +32,7 @@
   
 | Số liệu github | Ngôn ngữ thường dùng |
 |:-:|:-:|
-| [![Stats](https://github-readme-stats.vercel.app/api?username=trgchinhh&show_icons=true&theme=radical&hide=issues,contribs)](https://github.com/trgchinhh) | [![Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=trgchinhh&layout=compact&theme=radical)](https://github.com/trgchinhh) |
+| [![Stats](https://github-readme-stats.vercel.app/api?username=trgchinhh&show_icons=true&theme=radical&hide=issues,contribs&cache_seconds=3600)](https://github.com/trgchinhh) | [![Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=trgchinhh&layout=compact&theme=radical)](https://github.com/trgchinhh) |
 
 </table>
 </div>
