@@ -8,16 +8,14 @@
 
 ---
 
-<p align="center">
+<h2 align="center">
 <b>👋 HI</b></br>
-- 🔭 Mình là coder về <b>những dự án bot telegram</b><br>  
-- 🌱 Lĩnh vực thích nghiên cứu: <b>bot crypto về các sàn giao dịch</b><br>  
-- 💬 Mình hay code: <b>Python, Telebot, C++, APIs</b><br>  
-</p>
+🔭 <b>I AM A CODER ABOUT TELEGRAM BOT</b><br>  
+</h2>
 
 ---
 
-<h2 align = "center">🛠 Kỹ năng</h2>
+<h2 align = "center">🛠 KỸ NĂNG</h2>
 <p align="center">
   <img src="https://img.shields.io/badge/-Python-333?style=for-the-badge&logo=python&logoColor=yellow"/>
   <img src="https://img.shields.io/badge/-C++-333?style=for-the-badge&logo=c%2B%2B&logoColor=blue"/>
