@@ -1,3 +1,7 @@
+<h1 align = "center">NGUYEN TRUONG CHINH</h1>
+
+---
+
 <p align="center">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="" alt="Coding gif"/>
 </p>
@@ -41,9 +45,9 @@
 
 <h2 align="center">📫 Liên hệ</h2>
 <p align="center">
-  📧 <b>Gmail</b>: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chinhcuber@gmail.com" target="_blank" rel="noopener noreferrer">chinhcuber@gmail.com</a><br>
+  📧 <b>Email</b>: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chinhcuber@gmail.com" target="_blank" rel="noopener noreferrer">chinhcuber@gmail.com</a><br>
   🎓 <b>Student Email</b>: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dh52400374@student.stu.edu.vn" target="_blank" rel="noopener noreferrer">dh52400374@student.stu.edu.vn</a><br>
-  🌐 <b>Portfolio</b>: <a href="https://trgchinhh.github.io/web/" target="_blank" rel="noopener noreferrer">trgchinh.github.io</a>
+  🌐 <b>Persional Web</b>: <a href="https://trgchinhh.github.io/web/" target="_blank" rel="noopener noreferrer">trgchinh.github.io</a>
 </p>
 
 ---
