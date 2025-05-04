@@ -10,7 +10,7 @@
 </h3>-->
 
 <div align="center">
-  <image src="https://github.com/alexcao194/alexcao194/blob/master/cat.gif">
+  <image src="https://github.com/alexcao194/alexcao194/blob/master/cat.gif"> <!-- Nguồn gif cat từ anh Alexcao194 
 </div>
 <!--<p align="left">
   <img src="https://komarev.com/ghpvc/?username=trgchinhh&label=Views&color=blue&style=flat-square" width = 70 alt="trgchinhh" />
