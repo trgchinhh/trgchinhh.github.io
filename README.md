@@ -1,7 +1,7 @@
-<h1 align="center">
+<!--<h1 align="center">
 <b>👋 HI</b>
 <b>, I AM A CODER ABOUT TELEGRAM BOT</b><br>  
-</h1>
+</h1>-->
 
 <!--<h3 align="center">
   - 🔭 Mình là coder về <b>bot telegram</b><br>  
@@ -9,14 +9,12 @@
   - 💬 Mình hay code: <b>Python, Telebot, C++, APIs, ...</b><br>  
 </h3>-->
 
----
-
 <div align="center">
   <image src="https://github.com/alexcao194/alexcao194/blob/master/cat.gif">
 </div>
-<p align="left">
+<!--<p align="left">
   <img src="https://komarev.com/ghpvc/?username=trgchinhh&label=Views&color=blue&style=flat-square" width = 70 alt="trgchinhh" />
-</p>
+</p>-->
 
 ---
 
