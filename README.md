@@ -1,21 +1,20 @@
-<h1 align = "center">NGUYEN TRUONG CHINH</h1>
-
----
-
-<p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="" alt="Coding gif"/>
-</p>
-
----
-
 <h2 align="center">
-<b>👋 HI</b></br>
-🔭 <b>I AM A CODER ABOUT TELEGRAM BOT</b><br>  
+<b>👋 HI</b>
+<b>, I AM A CODER ABOUT TELEGRAM BOT</b><br>  
 </h2>
 
 ---
 
-<h2 align = "center">🛠 KỸ NĂNG</h2>
+<p align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400" alt="Coding gif"/>
+</p>
+<!-- <p align="left">
+  <img src="https://komarev.com/ghpvc/?username=trgchinhh&label=Views&color=blue&style=flat-square" width = 100 alt="trgchinhh" />
+</p> -->
+
+---
+
+<h2 align = "center">🛠 Kỹ năng</h2>
 <p align="center">
   <img src="https://img.shields.io/badge/-Python-333?style=for-the-badge&logo=python&logoColor=yellow"/>
   <img src="https://img.shields.io/badge/-C++-333?style=for-the-badge&logo=c%2B%2B&logoColor=blue"/>
@@ -27,6 +26,7 @@
 ---
 
 <div align="center">
+<h2 align = "center">Thống kê tài khoản</h2>
 <table>
   
 | Số liệu github | Ngôn ngữ thường dùng |
@@ -36,16 +36,20 @@
 </table>
 </div>
 
-###
-[![Contributions](https://fabianocouto-activity-graph.vercel.app/graph/?username=trgchinhh&theme=react-dark)](https://github.com/trgchinhh)
+<h2 align="center">Biểu đồ hoạt động</h2>
+
+<p align="center">
+  <a href="https://github.com/trgchinhh">
+    <img src="https://fabianocouto-activity-graph.vercel.app/graph/?username=trgchinhh&theme=react-dark" alt="Biểu đồ hoạt động của trgchinhh">
+  </a>
+</p>
 
 ---
 
 <h2 align="center">📫 Liên hệ</h2>
 <p align="center">
   📧 <b>Email</b>: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chinhcuber@gmail.com" target="_blank" rel="noopener noreferrer">chinhcuber@gmail.com</a><br>
-  🎓 <b>Student Email</b>: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dh52400374@student.stu.edu.vn" target="_blank" rel="noopener noreferrer">dh52400374@student.stu.edu.vn</a><br>
-  🌐 <b>Persional Web</b>: <a href="https://trgchinhh.github.io/web/" target="_blank" rel="noopener noreferrer">trgchinh.github.io</a>
+  🌐 <b>Personal Web</b>: <a href="https://trgchinhh.github.io/web/" target="_blank" rel="noopener noreferrer">trgchinh.github.io</a>
 </p>
 
 ---
