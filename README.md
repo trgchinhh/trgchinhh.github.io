@@ -1,7 +1,7 @@
-<h2 align="center">
+<h1 align="center">
 <b>👋 HI</b>
 <b>, I AM A CODER ABOUT TELEGRAM BOT</b><br>  
-</h2>
+</h1>
 
 ---
 
