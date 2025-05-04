@@ -3,20 +3,20 @@
 <b>, I AM A CODER ABOUT TELEGRAM BOT</b><br>  
 </h1>
 
-<h3 align="center">
+<!--<h3 align="center">
   - 🔭 Mình là coder về <b>bot telegram</b><br>  
   - 🌱 Lĩnh vực thích nghiên cứu: <b>bot crypto về các sàn giao dịch</b><br>  
   - 💬 Mình hay code: <b>Python, Telebot, C++, APIs, ...</b><br>  
-</h3>
+</h3>-->
 
 ---
 
-<p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400" alt="Coding gif"/>
+<div align="center">
+  <image src="https://github.com/alexcao194/alexcao194/blob/master/cat.gif">
+</div>
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=trgchinhh&label=Views&color=blue&style=flat-square" width = 70 alt="trgchinhh" />
 </p>
-<!-- <p align="left">
-  <img src="https://komarev.com/ghpvc/?username=trgchinhh&label=Views&color=blue&style=flat-square" width = 100 alt="trgchinhh" />
-</p> -->
 
 ---
 
