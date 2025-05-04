@@ -10,7 +10,7 @@
 </h3>-->
 
 <div align="center">
-  <image src="https://github.com/alexcao194/alexcao194/blob/master/cat.gif"> <!-- Nguồn gif cat từ anh Alexcao194 
+  <image src="https://github.com/alexcao194/alexcao194/blob/master/cat.gif"> <!-- Nguồn gif cat từ anh Alexcao194--> 
 </div>
 <!--<p align="left">
   <img src="https://komarev.com/ghpvc/?username=trgchinhh&label=Views&color=blue&style=flat-square" width = 70 alt="trgchinhh" />
@@ -18,7 +18,7 @@
 
 ---
 
-<h2 align = "center">🛠 Kỹ năng</h2>
+<h2 align = "center">🧑‍💻 Programming Skills</h2>
 <p align="center">
   <img src="https://img.shields.io/badge/-Python-333?style=for-the-badge&logo=python&logoColor=yellow"/>
   <img src="https://img.shields.io/badge/-C++-333?style=for-the-badge&logo=c%2B%2B&logoColor=blue"/>
@@ -30,17 +30,14 @@
 ---
 
 <div align="center">
-<h2 align = "center">Thống kê tài khoản</h2>
 <table>
-  
-| Số liệu github | Ngôn ngữ thường dùng |
+
+| Github Stats | Most Used Languages |
 |:-:|:-:|
 | [![Stats](https://github-readme-stats.vercel.app/api?username=trgchinhh&show_icons=true&theme=radical&hide=issues,contribs&cache_seconds=3600)](https://github.com/trgchinhh) | [![Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=trgchinhh&layout=compact&theme=radical)](https://github.com/trgchinhh) |
 
 </table>
 </div>
-
-<h2 align="center">Biểu đồ hoạt động</h2>
 
 <p align="center">
   <a href="https://github.com/trgchinhh">
@@ -50,7 +47,7 @@
 
 ---
 
-<h2 align="center">📫 Liên hệ</h2>
+<h2 align="center">📫 Contacts</h2>
 <p align="center">
   📧 <b>Email</b>: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=chinhcuber@gmail.com" target="_blank" rel="noopener noreferrer">chinhcuber@gmail.com</a><br>
   🌐 <b>Personal Web</b>: <a href="https://trgchinhh.github.io/web/" target="_blank" rel="noopener noreferrer">trgchinh.github.io</a>
@@ -58,7 +55,7 @@
 
 ---
 
-<h2 align = "center">🌐 Mạng xã hội</h2>
+<h2 align = "center">🌐 Information</h2>
 <p align="center">
   <a href="https://github.com/trgchinhh" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
