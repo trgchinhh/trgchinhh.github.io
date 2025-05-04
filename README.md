@@ -3,6 +3,12 @@
 <b>, I AM A CODER ABOUT TELEGRAM BOT</b><br>  
 </h1>
 
+<h3 align="center">
+  - 🔭 Mình là coder về <b>bot telegram</b><br>  
+  - 🌱 Lĩnh vực thích nghiên cứu: <b>bot crypto về các sàn giao dịch</b><br>  
+  - 💬 Mình hay code: <b>Python, Telebot, C++, APIs, ...</b><br>  
+</h3>
+
 ---
 
 <p align="center">
