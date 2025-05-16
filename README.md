@@ -22,6 +22,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/-Python-333?style=for-the-badge&logo=python&logoColor=yellow"/>
   <img src="https://img.shields.io/badge/-C++-333?style=for-the-badge&logo=c%2B%2B&logoColor=blue"/>
+  <img src="https://img.shields.io/badge/-HTML-333?style=for-the-badge&logo=html5&logoColor=white"/>
   <img src="https://img.shields.io/badge/-Telegram Bot-333?style=for-the-badge&logo=telegram&logoColor=white"/>
   <!--<img src="https://img.shields.io/badge/-APIs-333?style=for-the-badge&logo=linux"/>-->
   <img src="https://img.shields.io/badge/-CMD-333?style=for-the-badge&logo=windows-terminal&logoColor=white"/>
@@ -55,7 +56,7 @@
 
 ---
 
-<h2 align = "center">🌐 Information</h2>
+<h2 align = "center">🌐 Social Media</h2>
 <p align="center">
   <a href="https://github.com/trgchinhh" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
