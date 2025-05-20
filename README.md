@@ -1,4 +1,4 @@
-# 👋 Hi, I'm @trgchinhh
+# 👋 Hello world, I'm @trgchinhh
 ## About Me
 - 😄 I'm a beginner in programming.  
 - 🎓 I'm currently learning and building small projects to improve my skills.  
