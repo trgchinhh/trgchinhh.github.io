@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Share Bot Telegram</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .bot-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .bot-list li {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 4px solid #4CAF50;
+            background-color: #f9f9f9;
+        }
+        .bot-list a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+    </style>
 </head>
 <body>
-    <div id="meteor-container"></div>
-    <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
     <h3 style="margin-top: 1px;">🔗 Share Bot Telegram</h3>
-    <p><strong>Lưu ý:</strong><br>👉 <u>Nhớ thay API bot vào + thay đường dẫn đúng với máy</u><br></p>
+    <p><strong>Lưu ý:</strong><br>
+        👉 <u>Nhớ thay API bot vào + thay đường dẫn đúng với máy</u><br>
+    </p>
+
     <ul class="bot-list">
         <li>Bot TradingView: <a href="https://github.com/trgchinhh/Tradingview_Telegram_Bot">Download</a></li>
         <li>Bot mô phỏng blockchain: <a href="https://github.com/trgchinhh/bottelegram-py/blob/main/share_bot_blockchain.py">Download</a></li>
@@ -28,13 +47,5 @@
         <li>Bot lấy thông tin thời tiết: <a href="https://github.com/trgchinhh/Share_Bot_Telegram/blob/main/share_bot_get_data_weather.py">Download</a></li>
         <li>Bot lấy thông tin quốc gia: <a href="https://github.com/trgchinhh/Share_Bot_Telegram/blob/main/share_bot_get_data_nation.py">Download</a></li>
     </ul>
-    <div class="contact">
-        <p>Mọi thắc mắc xin vui lòng liên hệ</p>
-        <div class="social-links">
-            <a href="https://github.com/trgchinhh" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://facebook.com/trgchinhh" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-        </div>
-    </div>
-    <script src="script.js"></script>
 </body>
 </html>
