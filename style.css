@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+.bot-list {
+    list-style-type: none;
+    padding: 0;
+}
+.bot-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #4CAF50;
+    background-color: #f9f9f9;
+}
+.bot-list a {
+    text-decoration: none;
+    color: #0066cc;
+}
+.contact {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 12px;
+    transition: color 0.3s;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all .25s;
+    background: #fff;
+}
+
+.social-links a:hover {
+    background: #333;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.social-links .fa-github {
+    margin-right: 8px;
+}
+
+.social-links .fa-facebook {
+    margin-right: 8px;
+    color: #1877F2;
+}
