@@ -107,14 +107,18 @@
 <!-- ══ BLOG DETAIL PAGE ══ -->
 <div class="page-view" id="blogPage">
   <div class="container">
-    <button class="back-btn" onclick="closeBlogPost()">
-      <i class="fa-solid fa-arrow-left"></i> Quay lại
-    </button>
     <div class="blog-post-header">
-      <div id="bpTag"></div>
-      <h1 id="bpTitle"></h1>
-      <div class="blog-post-meta">
-        <span class="blog-post-date" id="bpDate"></span>
+      <div class="blog-header-left">
+        <div id="bpTag"></div>
+        <h1 id="bpTitle"></h1>
+        <div class="blog-post-meta">
+          <span class="blog-post-date" id="bpDate"></span>
+        </div>
+      </div>
+      <div class="blog-header-avatar">
+        <img src="img/avatar.jpg" alt="Trường Chinh"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span style="display:none" class="blog-avatar-fallback">NTC</span>
       </div>
     </div>
     <div class="blog-post-body" id="bpBody"></div>

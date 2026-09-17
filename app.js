@@ -54,7 +54,11 @@ function openBlogPost(id) {
 
   document.getElementById('mainView').classList.add('hidden');
   document.getElementById('blogPage').classList.add('active');
-  window.scrollTo({ top: 0 });
+  requestAnimationFrame(() => {
+    window.scrollTo(0, 0);
+  });
+
+  history.pushState({ blog: true }, '');
 }
 
 function closeBlogPost() {
@@ -63,6 +67,12 @@ function closeBlogPost() {
   document.getElementById('blog').scrollIntoView({ behavior: 'smooth' });
 }
 
+window.addEventListener('popstate', () => {
+  if (document.getElementById('blogPage').classList.contains('active')) {
+    closeBlogPost();
+  }
+});
+
 /* ══ RENDER PROJECTS ══ */
 function renderProjects(filter = 'all') {
   const grid = document.getElementById('projectsGrid');
@@ -70,7 +80,9 @@ function renderProjects(filter = 'all') {
   grid.innerHTML = items.map(p => `
     <div class="project-card" onclick="openModal('${p.id}')">
       <div class="project-thumb">
-        <span class="project-thumb-emoji">${p.emoji}</span>
+        <img src="${p.image}" alt="${p.name}" class="project-thumb-img ${p.id}"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="project-thumb-emoji" style="display:none">${p.emoji}</span>
       </div>
       <div class="project-body">
         <div class="project-type">${p.typeLabel}</div>
@@ -99,7 +111,11 @@ function openModal(id) {
   const p = PROJECTS.find(x => x.id === id);
   if (!p) return;
 
-  document.getElementById('mEmoji').textContent = p.emoji;
+  document.getElementById('mEmoji').innerHTML = `
+    <img src="${p.image}" alt="${p.name}" class="modal-project-img ${p.id}"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <span class="modal-thumb-emoji" style="display:none">${p.emoji}</span>
+  `;
   document.getElementById('mTitle').textContent = p.name;
   document.getElementById('mSub').textContent = p.typeLabel + ' · ' + p.tags.join(' · ');
   document.getElementById('mDesc').textContent = p.longDesc;
