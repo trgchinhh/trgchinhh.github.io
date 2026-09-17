@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trường Chinh</title>
+  <meta name="description" content="Portfolio cá nhân của Trường Chinh - lập trình viên C++ & Python.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">NTC++</span>
+  <div class="nav-links">
+    <a href="#blog">Blog</a>
+    <a href="#projects">Dự án</a>
+    <a href="#contact">Liên hệ</a>
+    <button class="theme-toggle" id="themeToggle" title="Đổi giao diện">
+      <i class="fa-solid fa-moon" id="themeIcon"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- ══ MAIN VIEW ══ -->
+<div class="main-view" id="mainView">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container">
+      <div class="avatar-wrap">
+        <!-- Thay src="your-photo.jpg" bằng ảnh thực của bạn -->
+        <img src="avatar.jpg" alt="Trường Chinh"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="avatar-placeholder" style="display:none">NTC</div>
+      </div>
+      <h1 class="hero-name">Trường Chinh</h1>
+      <p class="hero-title">Sinh viên</p>
+      <p class="hero-bio">
+        Mình là sinh viên công nghệ thích thiết kế và xây dựng phần mềm mã nguồn mở, đặc biệt quan tâm đến công nghệ blockchain, thuật toán mật mã và các tiêu chuẩn an ninh mạng như NIST. Bên cạnh đó mình còn thích làm việc với các ứng dụng cấp thấp, dựa trên giao diện dòng lệnh và lập trình hệ thống. Mục tiêu cuối cùng của mình là trở thành một kỹ sư blockchain.
+      </p>
+      <div class="hero-links">
+        <a class="btn btn-primary" href="https://github.com/trgchinhh" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a class="btn btn-outline" href="#projects">
+          Xem dự án
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2>Information</h2>
+        <a href="#" onclick="showAllBlogs(); return false;">Xem tất cả →</a>
+      </div>
+      <div class="blog-list" id="blogList">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>Dự án</h2>
+        <a href="https://github.com/trgchinhh" target="_blank">GitHub →</a>
+      </div>
+
+      <div class="project-tabs" id="projectTabs">
+        <button class="tab-btn active" data-filter="all">Tất cả</button>
+        <button class="tab-btn" data-filter="bot">Bot Telegram</button>
+        <button class="tab-btn" data-filter="lib">Thư viện</button>
+        <button class="tab-btn" data-filter="cpp">C++</button>
+        <button class="tab-btn" data-filter="web">Web</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact">
+    <div class="container">
+      <p class="footer-name">Trường Chinh</p>
+      <p class="footer-tagline">Xây dựng những thứ hữu ích &amp; mã nguồn mở</p>
+      <div class="footer-social">
+        <a href="https://github.com/trgchinhh" target="_blank">
+          <i class="fab fa-github"></i> trgchinhh
+        </a>
+        <a href="https://github.com/chinhcoder" target="_blank">
+          <i class="fab fa-github"></i> chinhcoder
+        </a>
+        <a href="https://facebook.com/trgchinhh" target="_blank">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+      </div>
+      <p class="footer-copy">
+        © 2026 <span>Trường Chinh</span>. Bản quyền đã được bảo lưu.
+      </p>
+    </div>
+  </footer>
+
+</div><!-- /main-view -->
+
+<!-- ══ BLOG DETAIL PAGE ══ -->
+<div class="page-view" id="blogPage">
+  <div class="container">
+    <button class="back-btn" onclick="closeBlogPost()">
+      <i class="fa-solid fa-arrow-left"></i> Quay lại
+    </button>
+    <div class="blog-post-header">
+      <div id="bpTag"></div>
+      <h1 id="bpTitle"></h1>
+      <div class="blog-post-meta">
+        <span class="blog-post-date" id="bpDate"></span>
+      </div>
+    </div>
+    <div class="blog-post-body" id="bpBody"></div>
+  </div>
+</div>
+
+<!-- ══ PROJECT MODAL ══ -->
+<div class="modal-overlay" id="projectModal" onclick="closeModal(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModalDirect()"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-header-img" id="mEmoji"></div>
+    <div class="modal-body">
+      <h2 id="mTitle"></h2>
+      <p class="modal-subtitle" id="mSub"></p>
+      <p class="modal-desc" id="mDesc"></p>
+      <div class="modal-features" id="mFeatures"></div>
+      <div class="modal-links" id="mLinks"></div>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
