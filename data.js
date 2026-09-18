@@ -2,7 +2,8 @@ const ACHIEVEMENTS = [
   {
     id: "a1",
     title: 'Top 1 giải học thuật "Coder tiềm năng 2026"',
-    cert: "img/giaychungnhan.png"
+    cert: "img/giaychungnhan.png",
+    reward: "img/phanthuong.png"
   },
   // thêm giải mới
 ];
@@ -29,7 +30,7 @@ Bên cạnh đó mình còn thích làm việc với các ứng dụng cấp th�
 </p>
 
 <h2>Mục tiêu</h2>
-<p>Trở thành kỹ sư Web3/Blockchain trong tương lai</p>
+<p>Trở thành kỹ sư backend Web3/Blockchain trong tương lai</p>
 
 <h2>Kỹ năng</h2>
 <ul>

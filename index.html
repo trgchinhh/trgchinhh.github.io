@@ -4,17 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trường Chinh</title>
-  <meta name="description" content="Portfolio cá nhân của Trường Chinh - lập trình viên C++ & Python.">
+  <meta name="description" content="Portfolio cá nhân của Trường Chinh">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
+
 </head>
 <body>
 
 <nav>
   <span class="nav-logo"><i class="fa-solid fa-laptop-code" style="color:var(--accent);"></i> NTC++</span>
   <div class="nav-links">
-    <a href="#blog">Thông tin</a>
+    <a href="#info">Thông tin</a>
     <a href="#projects">Dự án</a>
     <a href="#contact">Liên hệ</a>
     <button class="theme-toggle" id="themeToggle" title="Đổi giao diện">
@@ -30,7 +32,7 @@
   <section id="hero">
     <div class="container">
       <div class="avatar-wrap">
-        <!-- Thay src="your-photo.jpg" bằng ảnh thực của bạn -->
+        <!-- Thay src="your-photo.png" bằng ảnh thực của bạn -->
         <img src="img/avatar2.png" alt="Trường Chinh"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="avatar-placeholder" style="display:none">NTC</div>
@@ -61,6 +63,29 @@
       <div class="blog-list" id="blogList">
         <!-- Rendered by JS -->
       </div>
+    </div>
+  </section>
+
+  <!-- ảnh -->
+  <section class="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2>Kỷ niệm</h2>
+      </div>
+      <div class="gallery-track">
+        <div class="gallery-item"><img src="img/1.png" alt=""></div>
+        <div class="gallery-item"><img src="img/2.png" alt=""></div>
+        <div class="gallery-item"><img src="img/3.png" alt=""></div>
+        <div class="gallery-item"><img src="img/4.png" alt=""></div>
+        <div class="gallery-item"><img src="img/5.png" alt=""></div>
+        <div class="gallery-item"><img src="img/6.png" alt=""></div>
+        <div class="gallery-item"><img src="img/7.png" alt=""></div>
+        <div class="gallery-item"><img src="img/8.png" alt=""></div>
+        <div class="gallery-item"><img src="img/9.png" alt=""></div>
+        <div class="gallery-item"><img src="img/10.png" alt=""></div>
+      </div>
+      <button class="gallery-prev">‹</button>
+      <button class="gallery-next">›</button>
     </div>
   </section>
 
@@ -95,6 +120,9 @@
         </a>
         <a href="https://facebook.com/trgchinhh" target="_blank">
           <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://instagram.com/trgchinhh" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
         </a>
       </div>
       <p class="footer-copy">
@@ -136,5 +164,7 @@
 
 <script src="data.js"></script>
 <script src="app.js"></script>
+<script src="style1.js"></script>
+
 </body>
 </html>

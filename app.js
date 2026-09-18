@@ -32,14 +32,14 @@ function renderBlogList(items) {
   `).join('');
 }
 
-function showAllBlogs() {
+function showAllINFO() {
   renderBlogList(INFO);
   // scroll vào section blog
   document.getElementById('blog').scrollIntoView({ behavior: 'smooth' });
 }
 
 // Mặc định hiện 3 bài đầu
-//renderBlogList(BLOGS.slice(0, 3));
+//renderBlogList(INFO.slice(0, 3));
 const blogEl = document.getElementById('blogList');
 if (blogEl) renderBlogList(INFO.slice(0, 3));
 
@@ -54,7 +54,7 @@ function openBlogPost(id) {
   document.getElementById('mainView').classList.add('hidden');
   document.getElementById('blogPage').classList.add('active');
   window.scrollTo({ top: 0 });
-  history.pushState({ page: 'blog', id }, '', '#blog-' + id);
+  history.pushState({ page: 'info', id }, '', '#info-' + id);
 }
 
 function closeBlogPost() {
@@ -170,15 +170,41 @@ function renderAchievements() {
         <span style="display:flex; align-items:center; gap:8px; font-size:0.93rem; line-height:1.6;">
           <span style="color:var(--accent); font-weight:600;">–</span> ${a.title}
         </span>
-        <button onclick="toggleCert('${a.id}')" class="cert-btn" id="certBtn-${a.id}">
-          <i class="fa-solid fa-scroll"></i> Giấy chứng nhận
-        </button>
+        <div style="display:flex; gap:8px;">
+          <button onclick="toggleCert('${a.id}')" class="cert-btn" id="certBtn-${a.id}">
+            <i class="fa-solid fa-scroll"></i> Giấy chứng nhận
+          </button>
+          <button onclick="toggleReward('${a.id}')" class="cert-btn" id="rewardBtn-${a.id}">
+            <i class="fa-solid fa-trophy"></i> Phần thưởng
+          </button>
+        </div>
       </div>
       <div id="certBox-${a.id}" style="max-height:0; overflow:hidden; transition:max-height 0.4s ease, opacity 0.4s ease; opacity:0;">
         <div style="margin-top:14px;">
           <img src="${a.cert}" alt="Giấy chứng nhận" style="width:100%; display:block;">
         </div>
       </div>
+      <div id="rewardBox-${a.id}" style="max-height:0; overflow:hidden; transition:max-height 0.4s ease, opacity 0.4s ease; opacity:0;">
+        <div style="margin-top:14px;">
+          <img src="${a.reward}" alt="Phần thưởng" style="width:100%; display:block;">
+        </div>
+      </div>
     </div>
   `).join('');
+}
+
+function toggleReward(id) {
+  const box = document.getElementById('rewardBox-' + id);
+  const btn = document.getElementById('rewardBtn-' + id);
+  const isOpen = box.style.maxHeight !== '0px' && box.style.maxHeight !== '';
+
+  if (isOpen) {
+    box.style.maxHeight = '0';
+    box.style.opacity = '0';
+    btn.classList.remove('active');
+  } else {
+    box.style.maxHeight = box.scrollHeight + 'px';
+    box.style.opacity = '1';
+    btn.classList.add('active');
+  }
 }
