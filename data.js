@@ -3,13 +3,15 @@ const BLOGS = [
   {
     id: "b1",
     tag: "Saigon Technology University",
-    title: "My Profile",
+    title: "PROFILE",
     excerpt: "Những kỹ năng và kinh nghiệm của mình sau khi học code và những công nghệ cần thiết",
     date: "30 tháng 4 năm 2006",
     content: `
 <h2>Giới thiệu</h2>
-<p>Mình là Trường Chinh, sinh viên năm 3 trường Đại học Công nghệ Sài Gòn (STU).
-Hiện tại mình là Top 1 giải học thuật "Coder tiềm năng 2026" của khoa</p>
+<p>Mình là Trường Chinh, sinh viên năm 3 trường Đại học Công nghệ Sài Gòn (STU)</p>
+
+<h2>Thành tích</h2>
+<p>Top 1 giải học thuật "Coder tiềm năng 2026"</p>
 
 <h2>Sở thích</h2>
 <p>Mình thích thiết kế và xây dựng phần mềm mã nguồn mở, 

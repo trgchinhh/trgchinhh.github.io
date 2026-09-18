@@ -47,18 +47,12 @@ function openBlogPost(id) {
   const post = BLOGS.find(b => b.id === id);
   if (!post) return;
 
-  document.getElementById('bpTag').innerHTML = `<div class="blog-tag">${post.tag}</div>`;
-  document.getElementById('bpTitle').textContent = post.title;
-  document.getElementById('bpDate').textContent = post.date;
   document.getElementById('bpBody').innerHTML = post.content;
 
   document.getElementById('mainView').classList.add('hidden');
   document.getElementById('blogPage').classList.add('active');
-  requestAnimationFrame(() => {
-    window.scrollTo(0, 0);
-  });
-
-  history.pushState({ blog: true }, '');
+  window.scrollTo({ top: 0 });
+  history.pushState({ page: 'blog', id }, '', '#blog-' + id);
 }
 
 function closeBlogPost() {

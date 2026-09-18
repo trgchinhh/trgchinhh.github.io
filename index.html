@@ -107,18 +107,11 @@
 <!-- ══ BLOG DETAIL PAGE ══ -->
 <div class="page-view" id="blogPage">
   <div class="container">
-    <div class="blog-post-header">
-      <div class="blog-header-left">
-        <div id="bpTag"></div>
-        <h1 id="bpTitle"></h1>
-        <div class="blog-post-meta">
-          <span class="blog-post-date" id="bpDate"></span>
-        </div>
-      </div>
-      <div class="blog-header-avatar">
+    <div style="display: flex; justify-content: center; padding: 32px 0 40px;">
+      <div class="avatar-wrap">
         <img src="img/avatar.jpg" alt="Trường Chinh"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <span style="display:none" class="blog-avatar-fallback">NTC</span>
+        <div class="avatar-placeholder" style="display:none">NTC</div>
       </div>
     </div>
     <div class="blog-post-body" id="bpBody"></div>
