@@ -1,5 +1,14 @@
+const ACHIEVEMENTS = [
+  {
+    id: "a1",
+    title: 'Top 1 giải học thuật "Coder tiềm năng 2026"',
+    cert: "img/giaychungnhan.png"
+  },
+  // thêm giải mới
+];
+
 // ══ BLOG POSTS ══
-const BLOGS = [
+const INFO = [
   {
     id: "b1",
     tag: "Saigon Technology University",
@@ -11,7 +20,7 @@ const BLOGS = [
 <p>Mình là Trường Chinh, sinh viên năm 3 trường Đại học Công nghệ Sài Gòn (STU)</p>
 
 <h2>Thành tích</h2>
-<p>Top 1 giải học thuật "Coder tiềm năng 2026"</p>
+<div id="achievementList"></div>
 
 <h2>Sở thích</h2>
 <p>Mình thích thiết kế và xây dựng phần mềm mã nguồn mở, 
@@ -24,11 +33,12 @@ Bên cạnh đó mình còn thích làm việc với các ứng dụng cấp th�
 
 <h2>Kỹ năng</h2>
 <ul>
-  <li><strong>Ngôn ngữ lập trình: </strong>C++ / Python / C# cơ bản</li>
-  <li><strong>Công nghệ: </strong>Git / GitHub</li>
+  <li><strong>Ngôn ngữ lập trình: </strong>C++ / Python / C# / Java cơ bản</li>
+  <li><strong>Công nghệ: </strong>Git / Github</li>
   <li><strong>Web: </strong>HTML / CSS / JavaScript cơ bản</li>
-  <li><strong>Linux: </strong>Ubuntu</li>    
-  <li><strong>Khác: </strong>BatchScript cơ bản</li>
+  <li><strong>Framework: </strong>Express cơ bản</li>
+  <li><strong>Linux: </strong>Ubuntu / WSL</li>    
+  <li><strong>Khác: </strong>SSH / BatchScript cơ bản</li>
 </ul>
 
 <h2>Kinh nghiệm</h2>
@@ -47,14 +57,14 @@ Bên cạnh đó mình còn thích làm việc với các ứng dụng cấp th�
 const PROJECTS = [
   {
     id: "p1",
-    emoji: "🏥",
+    emoji: "🗂️",
     image: "img/p1.png",
     type: "lib",
     typeLabel: "Thư viện",
     name: "C-Healthy",
     desc: "Thư viện mã nguồn mở tính toán chỉ số sức khỏe, BMI, BMR, TDEE, .... Có bản Python (PyPI) và C++",
     tags: ["Python", "C++", "PyPI", "Open Source", "Health"],
-    longDesc: "C-Healthy là thư viện mã nguồn mở cung cấp các hàm tính toán chỉ số sức khỏe phổ biến. Được viết song song bằng Python và C++ để phục vụ nhiều nhu cầu. Thư viện Python đã được publish lên trang chủ PyPI.",
+    longDesc: "C-Healthy là thư viện mã nguồn mở cung cấp các hàm tính toán chỉ số sức khỏe phổ biến. Được viết song song bằng Python và C++ để phục vụ nhiều nhu cầu. Thư viện Python đã được publish lên trang chủ PyPI",
     features: [
       "Tính BMI (Body Mass Index) với phân loại WHO",
       "Tính BMR (Basal Metabolic Rate) - Tỷ lệ chuyển hóa cơ bản",
@@ -114,7 +124,7 @@ const PROJECTS = [
       "Tính ABRI (Advanced Body Roundness Index) - Chỉ số độ tròn cơ thể mở rộng",
       "Tính BRI (Body Roundness Index) - Chỉ số độ tròn cơ thể",
       "Tính VAI (Visceral Adiposity Index) - Chỉ số mỡ nội tạng chuyên sâu",
-      "Tính LAP (Lipid Accumulation Product) - Chỉ số tích lũy lipid",
+      "Tính LAP (Lipid Accumulation Product) - Chỉ số tích lũy lipid"
     ],
     links: [
       { label: "PyPI", url: "https://pypi.org/project/C-healthy/0.3.0/", icon: "fab fa-python" },
@@ -147,11 +157,11 @@ const PROJECTS = [
     id: "p3",
     emoji: "🎲",
     image: "img/p3.png",
-    type: "game",
+    type: "cpp",
     typeLabel: "Casino Game C++",
     name: "Casino Game C++",
     desc: "Tổng hợp 25 minigame cá cược thuần C++ chơi trên môi trường dòng lệnh",
-    tags: ["C++", "Mingw64", "Open Source"],
+    tags: ["C++", "Game Sicbo", "custom TUI", "Open Source"],
     longDesc: "Casino Game C++ là một dự án game cá cược tập hợp gồm nhiều minigame bên trong, vận hành hoàn toàn trên môi trường dòng lệnh (custom TUI), được phát triển bằng ngôn ngữ C++. dự án mang đến trải nghiệm ASCII trực quan, hệ thống âm thanh sống động, cơ chế bảo mật mã hóa nâng cao và tích hợp AI dự đoán kết quả ngay trong terminal",
     features: [
       "Đăng ký và đăng nhập tài khoản",
@@ -179,9 +189,9 @@ const PROJECTS = [
     type: "bot",
     typeLabel: "Bot Telegram",
     name: "Share Bot Telegram",
-    desc: "Bộ sưu tập 15+ bot Telegram mã nguồn mở — từ dịch thuật, thời tiết, hash dữ liệu đến mô phỏng blockchain và QR ngân hàng.",
+    desc: "Chia sẻ các bot telegram tiện ích",
     tags: ["Python", "Telegram API", "Open Source"],
-    longDesc: "Tập hợp các bot Telegram được viết bằng Python, sử dụng thư viện python-telegram-bot. Mỗi bot giải quyết một bài toán thực tế cụ thể. Một số API phụ thuộc có thể đã ngừng hoạt động — code vẫn có giá trị tham khảo.",
+    longDesc: "Tập hợp các bot Telegram được viết bằng Python. Một số API phụ thuộc có thể đã ngừng hoạt động, code vẫn có giá trị tham khảo",
     features: [
       "Bot phân tích tradingview",
       "Bot spam sms (vip)",
@@ -202,6 +212,70 @@ const PROJECTS = [
     links: [
       { label: "GitHub", url: "https://github.com/trgchinhh/Share_Bot_Telegram", icon: "fab fa-github" },
       { label: "Xem demo", url: "bot-list.html", icon: "fa-solid fa-list" }
+    ]
+  },
+  {
+    id: "p5",
+    emoji: "🛗",
+    image: "img/p5.png",
+    type: "cpp",
+    typeLabel: "Elevator C++",
+    name: "Elevator C++",
+    desc: "Demo thang máy hoạt động",
+    tags: ["C++", "Scan Algorithm", "ASCII", "Open Source"],
+    longDesc: "Demo nhỏ về cách hoạt động của thang máy bằng thuật toán Scan và mô phỏng thang máy bằng ký tự ASCII",
+    features: [
+      "Mô phỏng điều khiển thang máy (10 tầng)",
+      "Áp dụng thuật toán định tuyến SCAN",
+      "Giữ nguyên hướng di chuyển và đổi chiều thông minh",
+      "Quản lý tải trọng tối đa 10 người",
+      "Tự động tìm mục tiêu gần nhất theo hướng đi",
+      "Trạng thái nghỉ thông minh",
+    ],
+    links: [
+      { label: "GitHub", url: "https://github.com/trgchinhh/Elevator-cpp", icon: "fab fa-github" },
+    ]
+  },
+  {
+    id: "p6",
+    emoji: "🗂️",
+    image: "img/p6.png",
+    type: "lib",
+    typeLabel: "Clibrary C++",
+    name: "Clibrary C++",
+    desc: "Thư viện tự build dựa trên thư viện gốc C++",
+    tags: ["C++", "Library", "Open Source"],
+    longDesc: "Tập hợp các thư viện tự build dựa trên các thư viện gốc trong C++ hỗ trợ cú pháp viết ngắn gọn và đơn giản",
+    features: [
+      "C-healthy-cpp: Thư viện tính toán các chỉ số sức khỏe",
+      "hashlib-cpp: Thư viện mã hóa và băm dữ liệu dựa trên OpenSSL",
+      "datetime-cpp: Thư viện lấy ngày giờ hệ thống dựa trên std::chrono",
+      "list-cpp: Thư viện danh sách tự phát triển theo phong cách List của Python",
+      "random-cpp: Thư viện sinh số ngẫu nhiên ngắn gọn dựa trên C++ <random>",
+      "minilog-cpp: Thư viện ghi log đơn giản, hỗ trợ màu Terminal và xuất file log",
+    ],
+    links: [
+      { label: "GitHub", url: "https://github.com/trgchinhh/Clibrary-hpp", icon: "fab fa-github" },
+    ]
+  },
+  {
+    id: "p7",
+    emoji: "🔒",
+    image: "img/p7.png",
+    type: "web",
+    typeLabel: "MFA-Web",
+    name: "Multi factor authenticator website",
+    desc: "Xác thực đa yếu tố",
+    tags: ["Web", "Express JS", "Bot telegram", "Open Source"],
+    longDesc: "Dự án nhỏ mô phỏng website xác thực đa yếu tố bằng Express JS và trả OTP về bot telegram",
+    features: [
+      "Đăng nhập tài khoản bằng username và password",
+      "Sinh mã OTP ngẫu nhiên gồm 4 chữ số",
+      "Gửi mã xác thực OTP tự động qua bot telegram",
+      "Thông báo kết quả xác minh (Thành công / thất bại)"
+    ],
+    links: [
+      { label: "GitHub", url: "https://github.com/trgchinhh/MFA-Web", icon: "fab fa-github" },
     ]
   },
 ];

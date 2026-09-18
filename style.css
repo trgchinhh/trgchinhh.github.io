@@ -57,7 +57,7 @@ nav {
 }
 
 .nav-logo {
-  font-weight: 700; font-size: 1.05rem;
+  font-weight: 700; font-size: 1.1rem;
   color: var(--accent);
   letter-spacing: -0.3px;
 }
@@ -67,7 +67,7 @@ nav {
 }
 
 .nav-links a {
-  font-size: 0.88rem; font-weight: 500; color: var(--muted);
+  font-size: 1rem; font-weight: 500; color: var(--muted);
   transition: color var(--transition);
 }
 .nav-links a:hover { color: var(--accent); }
@@ -118,7 +118,7 @@ section { padding: 80px 0; }
 }
 
 .hero-name {
-  font-size: 1.9rem; font-weight: 700;
+  font-size: 2rem; font-weight: 700;
   letter-spacing: -0.5px; line-height: 1.2;
   margin-bottom: 6px;
 }
@@ -382,7 +382,10 @@ footer {
 .blog-post-meta .blog-tag { margin: 0; }
 .blog-post-date { font-size: 0.82rem; color: var(--muted); }
 .blog-post-body { font-size: 0.97rem; line-height: 1.85; color: var(--text); max-width: 680px; }
-.blog-post-body h2 { font-size: 1.2rem; font-weight: 700; margin: 36px 0 12px; }
+.blog-post-body h2 {
+  font-size: 1.2rem; font-weight: 700; margin: 36px 0 12px; 
+  color: var(--accent); 
+}
 .blog-post-body h3 { font-size: 1.05rem; font-weight: 600; margin: 28px 0 10px; }
 .blog-post-body p { margin-bottom: 18px; }
 .blog-post-body code {
@@ -413,4 +416,45 @@ footer {
   .blog-card { flex-direction: column; }
   .blog-post-header { flex-direction: column; }
   .blog-header-avatar { width: 72px; height: 72px; }
+}
+
+.cert-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 14px; border-radius: 8px;
+  border: 2px solid var(--accent);  /* ← viền luôn cam */
+  background: transparent;
+  font-size: 0.82rem; font-weight: 600;
+  color: var(--muted);                /* ← chữ mặc định xám */
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: 'Inter', sans-serif;
+}
+.cert-btn:hover { color: var(--accent); }        /* ← hover thì chữ cam */
+.cert-btn.active { color: var(--accent); }
+
+.blog-post-body ul {
+  padding-left: 0;
+  margin-bottom: 18px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+
+.blog-post-body ul li {
+  list-style: none;
+  padding-left: 16px;
+  position: relative;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+.blog-post-body ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+#achievementList img {
+  border: 2px solid var(--accent);
+  border-radius: 15px;
+  overflow: hidden;
 }

@@ -6,7 +6,8 @@ const themeIcon   = document.getElementById('themeIcon');
 function setTheme(t) {
   root.setAttribute('data-theme', t);
   localStorage.setItem('theme', t);
-  themeIcon.className = t === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+  //themeIcon.className = t === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+  themeIcon.className = t === 'dark' ? 'ph-bold ph-sun-horizon' : 'ph-bold ph-moon';
 }
 
 // Init
@@ -32,7 +33,7 @@ function renderBlogList(items) {
 }
 
 function showAllBlogs() {
-  renderBlogList(BLOGS);
+  renderBlogList(INFO);
   // scroll vào section blog
   document.getElementById('blog').scrollIntoView({ behavior: 'smooth' });
 }
@@ -40,15 +41,16 @@ function showAllBlogs() {
 // Mặc định hiện 3 bài đầu
 //renderBlogList(BLOGS.slice(0, 3));
 const blogEl = document.getElementById('blogList');
-if (blogEl) renderBlogList(BLOGS.slice(0, 3));
+if (blogEl) renderBlogList(INFO.slice(0, 3));
 
 /* ══ BLOG POST ══ */
 function openBlogPost(id) {
-  const post = BLOGS.find(b => b.id === id);
+  const post = INFO.find(b => b.id === id);
   if (!post) return;
 
   document.getElementById('bpBody').innerHTML = post.content;
-
+  renderAchievements(); // ← thêm dòng này
+  
   document.getElementById('mainView').classList.add('hidden');
   document.getElementById('blogPage').classList.add('active');
   window.scrollTo({ top: 0 });
@@ -142,3 +144,41 @@ function closeModal(e) {
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeModalDirect();
 });
+
+function toggleCert(id) {
+  const box = document.getElementById('certBox-' + id);
+  const btn = document.getElementById('certBtn-' + id);
+  const isOpen = box.style.maxHeight !== '0px' && box.style.maxHeight !== '';
+
+  if (isOpen) {
+    box.style.maxHeight = '0';
+    box.style.opacity = '0';
+    btn.classList.remove('active');
+  } else {
+    box.style.maxHeight = box.scrollHeight + 'px';
+    box.style.opacity = '1';
+    btn.classList.add('active');
+  }
+}
+
+function renderAchievements() {
+  const el = document.getElementById('achievementList');
+  if (!el) return;
+  el.innerHTML = ACHIEVEMENTS.map(a => `
+    <div style="margin-bottom: 10px;">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+        <span style="display:flex; align-items:center; gap:8px; font-size:0.93rem; line-height:1.6;">
+          <span style="color:var(--accent); font-weight:600;">–</span> ${a.title}
+        </span>
+        <button onclick="toggleCert('${a.id}')" class="cert-btn" id="certBtn-${a.id}">
+          <i class="fa-solid fa-scroll"></i> Giấy chứng nhận
+        </button>
+      </div>
+      <div id="certBox-${a.id}" style="max-height:0; overflow:hidden; transition:max-height 0.4s ease, opacity 0.4s ease; opacity:0;">
+        <div style="margin-top:14px;">
+          <img src="${a.cert}" alt="Giấy chứng nhận" style="width:100%; display:block;">
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
