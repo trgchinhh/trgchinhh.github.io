@@ -19,29 +19,29 @@ themeToggle.addEventListener('click', () => {
 
 /* ══ RENDER BLOG LIST (trang chủ — 3 bài đầu) ══ */
 function renderBlogList(items) {
-  const el = document.getElementById('blogList');
+  const el = document.getElementById('infoList');
   el.innerHTML = items.map(b => `
-    <div class="blog-card" onclick="openBlogPost('${b.id}')">
-      <div class="blog-card-content">
-        <span class="blog-tag">${b.tag}</span>
+    <div class="info-card" onclick="openBlogPost('${b.id}')">
+      <div class="info-card-content">
+        <span class="info-tag">${b.tag}</span>
         <h3>${b.title}</h3>
         <p>${b.excerpt}</p>
       </div>
-      <span class="blog-card-date">${b.date}</span>
+      <span class="info-card-date">${b.date}</span>
     </div>
   `).join('');
 }
 
 function showAllINFO() {
   renderBlogList(INFO);
-  // scroll vào section blog
-  document.getElementById('blog').scrollIntoView({ behavior: 'smooth' });
+  // scroll vào section info
+  document.getElementById('info').scrollIntoView({ behavior: 'smooth' });
 }
 
 // Mặc định hiện 3 bài đầu
 //renderBlogList(INFO.slice(0, 3));
-const blogEl = document.getElementById('blogList');
-if (blogEl) renderBlogList(INFO.slice(0, 3));
+const infoEl = document.getElementById('infoList');
+if (infoEl) renderBlogList(INFO.slice(0, 3));
 
 /* ══ BLOG POST ══ */
 function openBlogPost(id) {
@@ -52,19 +52,19 @@ function openBlogPost(id) {
   renderAchievements(); // ← thêm dòng này
   
   document.getElementById('mainView').classList.add('hidden');
-  document.getElementById('blogPage').classList.add('active');
+  document.getElementById('infoPage').classList.add('active');
   window.scrollTo({ top: 0 });
   history.pushState({ page: 'info', id }, '', '#info-' + id);
 }
 
 function closeBlogPost() {
-  document.getElementById('blogPage').classList.remove('active');
+  document.getElementById('infoPage').classList.remove('active');
   document.getElementById('mainView').classList.remove('hidden');
-  document.getElementById('blog').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('info').scrollIntoView({ behavior: 'smooth' });
 }
 
 window.addEventListener('popstate', () => {
-  if (document.getElementById('blogPage').classList.contains('active')) {
+  if (document.getElementById('infoPage').classList.contains('active')) {
     closeBlogPost();
   }
 });
