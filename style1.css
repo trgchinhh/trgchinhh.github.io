@@ -80,3 +80,6 @@
     pointer-events: none;
 }
 
+.gallery {
+    touch-action: pan-y;
+}

@@ -107,3 +107,26 @@ gallery.addEventListener("mouseup", () => {
 gallery.addEventListener("mouseleave", () => {
     isDragging = false;
 });
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+gallery.addEventListener("touchstart", (e) => {
+    touchStartX = e.touches[0].clientX;
+}, { passive: true });
+
+gallery.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].clientX;
+
+    const diff = touchEndX - touchStartX;
+
+    if (Math.abs(diff) < 40) return;
+
+    if (diff < 0) {
+        current = (current + 1) % items.length;
+    } else {
+        current = (current - 1 + items.length) % items.length;
+    }
+
+    updateGallery();
+});
