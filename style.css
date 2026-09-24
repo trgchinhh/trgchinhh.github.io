@@ -6,7 +6,7 @@
   --bg2:       #F0EBE5;
   --surface:   #FFFFFF;
   --border:    #E5DDD6;
-  --text:      #2C2C2C;
+  --text:      #1F1F1F;
   --muted:     #8A7F76;
   --accent:    #F4622A;
   --accent-dk: #D94F1C;
@@ -19,7 +19,8 @@
   --bg2:       #2A2A2A;
   --surface:   #272727;
   --border:    #383838;
-  --text:      #E8E0D8;
+  /*--text:      #E8E0D8;*/
+  --text:      #FFFFFF ;
   --muted:     #8A8480;
 }
 

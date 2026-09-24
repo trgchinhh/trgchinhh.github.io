@@ -2,8 +2,8 @@ const ACHIEVEMENTS = [
   {
     id: "a1",
     title: 'Giải nhất cuộc thi "Coder tiềm năng 2026"',
-    cert: "img/giaychungnhan.png",
-    reward: "img/phanthuong.png"
+    cert: "img/codertiemnang-2026/giaychungnhan.png",
+    reward: "img/codertiemnang-2026/phanthuong.png"
   },
   // thêm giải mới
 ];
