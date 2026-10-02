@@ -21,8 +21,10 @@ const INFO = [
 
 <h2>Sở thích</h2>
 <p>Mình thích thiết kế và xây dựng phần mềm mã nguồn mở, 
-đặc biệt quan tâm đến công nghệ blockchain, các thuật toán mật mã hiện đại và các tiêu chuẩn an ninh mạng như NIST. 
-Bên cạnh đó mình còn thích phát triển các chương trình và công cụ bằng ngôn ngữ cấp thấp như C++, dựa trên giao diện dòng lệnh và lập trình hệ thống
+đặc biệt quan tâm đến công nghệ blockchain, 
+các thuật toán mật mã hiện đại và các tiêu chuẩn an ninh mạng như NIST. 
+Bên cạnh đó mình còn thích phát triển các chương trình và công cụ bằng ngôn ngữ cấp thấp như C++, 
+dựa trên giao diện dòng lệnh và lập trình hệ thống
 </p>
 
 <h2>Mục tiêu</h2>
@@ -47,6 +49,7 @@ Bên cạnh đó mình còn thích phát triển các chương trình và công 
   <li>Mô phỏng Mini Blockchain và cơ chế vận hành của các validator (P2P) bằng C++</li>
   <li>Viết mô phỏng CLI cho các thuật toán thực tế như Scan</li>
   <li>Viết mô phỏng CLI các thuật toán mã hóa cơ bản (Caesar, AES, RSA)</li>
+  <li>Viết chương trình quản lý sinh viên, có login cho giảng viên và kết nối SQL server</li>
 </ul>
     `
   }
