@@ -47,8 +47,7 @@ dựa trên giao diện dòng lệnh và lập trình hệ thống
   <li>Phát triển các bot telegram, thu thập dữ liệu qua API, bot games</li>
   <li>Phát triển mini games sicbo CLI với giao diện custom TUI bằng C++</li>
   <li>Mô phỏng Mini Blockchain và cơ chế vận hành của các validator (P2P) bằng C++</li>
-  <li>Viết mô phỏng CLI cho các thuật toán thực tế như Scan</li>
-  <li>Viết mô phỏng CLI các thuật toán mã hóa cơ bản (Caesar, AES, RSA)</li>
+  <li>Viết mô phỏng CLI các thuật toán mã hóa cơ bản (Caesar, AES, RSA, Playfair)</li>
   <li>Viết chương trình quản lý sinh viên, có login cho giảng viên và kết nối SQL server</li>
 </ul>
     `
