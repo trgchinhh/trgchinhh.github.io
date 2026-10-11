@@ -37,7 +37,7 @@ Mình là <strong>Trường Chinh</strong>, sinh viên năm 3 ngành Công ngh�
 
 <h2>Kỹ năng</h2>
 <ul>
-  <li><strong>Ngôn ngữ: </strong>C++, Python, C#, Batch Script (cơ bản)</li>
+  <li><strong>Ngôn ngữ: </strong>C++, Python, C#, Batchscript (cơ bản)</li>
   <li><strong>Web: </strong>HTML, CSS, JavaScript (cơ bản)</li> 
   <li><strong>Framework: </strong>ExpressJS, ASP.NET, Winforms (cơ bản)</li>
   <li><strong>Khác: </strong>Viết README.md, tài liệu mô tả, hướng dẫn</li>
@@ -45,12 +45,13 @@ Mình là <strong>Trường Chinh</strong>, sinh viên năm 3 ngành Công ngh�
 
 <h2>Công cụ mình dùng</h2>
 <ul>
-  <li><strong>Công cụ: </strong>Git, Github, Postman, Fork, Lazygit</li>
+  <li><strong>Công cụ: </strong>Git, Github, Postman, Fork, Lazygit, Rg, FZF</li>
   <li><strong>Hệ điều hành chính: </strong>Windows 11 (25H2)</li>
   <li><strong>Hệ điều hành máy ảo: </strong>Ubuntu 24 (Gnome), Arch install(KDE plasma)</li>
   <li><strong>IDE: </strong>Visual Studio 2022</li>
   <li><strong>Text editor: </strong>Sublime Text (chính), Visual Studio Code (phụ)</li>
   <li><strong>Terminal: </strong>Windows Terminal - Shell: Powershell</li>
+  <li><strong>Khác: </strong>SSH, MobaXterm (điều khiển linux server)</li>
 </ul>
 
 <h2>Các dự án</h2>
