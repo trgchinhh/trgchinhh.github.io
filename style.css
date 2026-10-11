@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono/index.css');
 
 /* ── TOKENS ── */
 :root {
@@ -28,8 +30,14 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
+@font-face {
+  font-family: 'Symbols Nerd Font';
+  src: url('https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts@v3.2.1/patched-fonts/NerdFontsSymbolsOnly/SymbolsNerdFont-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Inter', 'Symbols Nerd Font', system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
   font-size: 15px;
@@ -40,6 +48,13 @@ body {
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 ul { list-style: none; }
+
+/* ── SMOOTH SCROLL (Lenis) ── */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
 
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 5px; }
@@ -68,7 +83,7 @@ nav {
   width: 11px; height: 2px;
   background: var(--accent);
   border-radius: 2px;
-  margin-left: 3px;
+  margin-left: 0px;
   vertical-align: -3px;
   animation: logo-blink 1.1s steps(1) infinite;
 }
@@ -104,7 +119,7 @@ section { padding: 80px 0; }
 
 .info-avatar-top {
   display: flex; justify-content: center;
-  padding: 32px 0 40px;
+  padding: 20px 0 20px;
 }
 
 .avatar-wrap {

@@ -13,7 +13,7 @@
 <body>
 
 <nav>
-  <span class="nav-logo"> NTC++<span class="logo-cursor" aria-hidden="true"></span></span>
+  <span class="nav-logo">Portfolio ><span class="logo-cursor" aria-hidden="true"></span></span>
   <div class="nav-links">
     <button class="theme-toggle" id="themeToggle" title="Đổi giao diện">
       <i class="ph-bold ph-sun-horizon" id="themeIcon"></i>
@@ -47,7 +47,7 @@
         <div class="gallery-item"><img src="img/4.png" alt=""></div>
         <div class="gallery-item"><img src="img/5.png" alt=""></div>
         <div class="gallery-item"><img src="img/6.png" alt=""></div>
-        <div class="gallery-item"><img src="img/7.png" alt=""></div>
+        <!-- <div class="gallery-item"><img src="img/7.png" alt=""></div> -->
       </div>
       <button class="gallery-prev">‹</button>
       <button class="gallery-next">›</button>
@@ -56,7 +56,7 @@
 
   <!-- LIÊN HỆ -->
   <footer id="contact">
-    <div class="container">
+    <div class="container">      
       <div class="footer-social">
         <a href="https://github.com/trgchinhh" target="_blank">
           <i class="fab fa-github"></i> trgchinhh
@@ -69,7 +69,7 @@
         </a>
       </div>
       <p class="footer-copy">
-        © 2026 <span>Trường Chinh</span>. Bản quyền đã được bảo lưu.
+        © 2026 <span>Trường Chinh</span>. Bản quyền đã được bảo lưu
       </p>
     </div>
   </footer>
@@ -79,6 +79,15 @@
 <script src="data.js"></script>
 <script src="app.js"></script>
 <script src="style1.js"></script>
+<script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+<script>
+  new Lenis({
+    lerp: 0.24,
+    wheelMultiplier: 1,
+    smoothWheel: true,
+    autoRaf: true
+  });
+</script>
 
 </body>
 </html>

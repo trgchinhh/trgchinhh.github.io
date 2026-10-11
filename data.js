@@ -14,41 +14,53 @@ const INFO = [
     id: "b1",
     content: `
 <h2>Giới thiệu</h2>
-<p>Mình là Trường Chinh, sinh viên năm 3 ngành công nghệ thông tin trường Đại học Công nghệ Sài Gòn (STU)</p>
+<p>
+Mình là <strong>Trường Chinh</strong>, sinh viên năm 3 ngành Công nghệ thông tin trường Đại học Công nghệ Sài Gòn (STU).
+</p>
 
 <h2>Thành tích</h2>
 <div id="achievementList"></div>
 
-<h2>Sở thích</h2>
-<p>Mình thích thiết kế và xây dựng phần mềm mã nguồn mở, 
-đặc biệt quan tâm đến công nghệ blockchain, 
-các thuật toán mật mã hiện đại và các tiêu chuẩn an ninh mạng như NIST. 
-Bên cạnh đó mình còn thích phát triển các chương trình và công cụ bằng ngôn ngữ cấp thấp như C++, 
-dựa trên giao diện dòng lệnh và lập trình hệ thống
-</p>
+<h2>Lĩnh vực quan tâm</h2>
+<ul>
+  <li><strong>Blockchain: </strong>cơ chế đồng thuận, mạng ngang hàng (P2P) và smart contract</li>
+  <li><strong>Mật mã học: </strong>các thuật toán mã hóa hiện đại tiêu chuẩn của NIST</li>
+  <li><strong>Giao diện dòng lệnh: </strong>xây dựng giao diện dòng lệnh (CLI/TUI) bằng C++</li>
+  <li><strong>AI agent: </strong>đang học và tìm hiểu cách xây dựng giao diện, hệ thống cho 1 AI code</li>
+</ul>
 
-<h2>Mục tiêu</h2>
-<p>Trở thành kỹ sư Backend Web3/Blockchain trong tương lai</p>
+<h2>Mục tiêu tương lai</h2>
+<ul>
+  <li><strong>Backend Web3/Blockchain Engineer</strong></li>
+  <li><strong>Security Engineer</strong></li>
+</ul>
 
 <h2>Kỹ năng</h2>
 <ul>
-  <li><strong>Ngôn ngữ lập trình: </strong>C++ / Python / C# cơ bản</li>
-  <li><strong>Công nghệ: </strong>Git / Github</li>
-  <li><strong>Web: </strong>HTML / CSS / JavaScript cơ bản</li>
-  <li><strong>Framework: </strong>ExpressJS / ASP.NET cơ bản</li>
-  <li><strong>Linux: </strong>Ubuntu / WSL</li>    
-  <li><strong>Khác: </strong>SSH / Batchscript cơ bản</li>
-  <li><strong>Code editor: </strong>Sublime Text + Windows Terminal</li>
+  <li><strong>Ngôn ngữ: </strong>C++, Python, C#, Batch Script (cơ bản)</li>
+  <li><strong>Web: </strong>HTML, CSS, JavaScript (cơ bản)</li> 
+  <li><strong>Framework: </strong>ExpressJS, ASP.NET, Winforms (cơ bản)</li>
+  <li><strong>Khác: </strong>Viết README.md, tài liệu mô tả, hướng dẫn</li>
 </ul>
 
-<h2>Kinh nghiệm</h2>
+<h2>Công cụ mình dùng</h2>
 <ul>
-  <li>Xây dựng và phát hành thư viện mã nguồn mở bằng Python</li>
-  <li>Phát triển các bot telegram, thu thập dữ liệu qua API, bot games</li>
-  <li>Phát triển mini games sicbo CLI với giao diện custom TUI bằng C++</li>
-  <li>Mô phỏng Mini Blockchain và cơ chế vận hành của các validator (P2P) bằng C++</li>
-  <li>Viết mô phỏng CLI các thuật toán mã hóa cơ bản (Caesar, AES, RSA, Playfair)</li>
-  <li>Viết chương trình quản lý sinh viên, có login cho giảng viên và kết nối SQL server</li>
+  <li><strong>Công cụ: </strong>Git, Github, Postman, Fork, Lazygit</li>
+  <li><strong>Hệ điều hành chính: </strong>Windows 11 (25H2)</li>
+  <li><strong>Hệ điều hành máy ảo: </strong>Ubuntu 24 (Gnome), Arch install(KDE plasma)</li>
+  <li><strong>IDE: </strong>Visual Studio 2022</li>
+  <li><strong>Text editor: </strong>Sublime Text (chính), Visual Studio Code (phụ)</li>
+  <li><strong>Terminal: </strong>Windows Terminal - Shell: Powershell</li>
+</ul>
+
+<h2>Các dự án</h2>
+<ul>
+  <li><strong>Telegram bots:</strong> Phát triển các bot telegram, thu thập dữ liệu qua API, bot games, bot tools, ...</li>
+  <li><strong>Thư viện (Python):</strong> xây dựng, hướng dẫn phát hành thư viện C-healthy (tính chỉ số cơ thể) lên PyPI</li>
+  <li><strong>Minigames  (C++):</strong> mini game cá cược CLI với giao diện custom TUI (không cần dùng chuột)</li>
+  <li><strong>Blockchain (C++):</strong> mô phỏng blockchain nhỏ về cơ chế vận hành của validator trên mạng P2P với mini smart contract</li>
+  <li><strong>Thuật toán mã hóa (C#):</strong> xây dựng chương trình CLI về các thuật toán Caesar, AES, RSA, Playfair, ...</li>
+  <li><strong>Quản lý sinh viên (C#):</strong> mô phỏng chương trình CLI có chức năng đăng nhập cho giảng viên, lưu trữ dữ liệu trên SQL Server</li>
 </ul>
     `
   }
