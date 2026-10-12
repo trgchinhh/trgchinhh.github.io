@@ -298,3 +298,67 @@ footer {
 #avatar3d canvas {
   touch-action: none;
 }
+
+
+
+
+
+
+
+
+
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;                 /* chữ Trường Chinh màu trắng */
+}
+
+.term-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1px;
+  height: 26px;
+  min-width: 52px;
+  padding: 0 8px;
+  border: 2px solid #f4622a;   /* khung cam */
+  border-radius: 6px;
+  background: var(--bg, #fff);    /* nền cam nhạt bên trong, bỏ dòng này nếu muốn trong suốt */
+  color: #fff;                 /* > và _ màu trắng */
+  font-family: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+.term-prompt {
+  color: #fff;                 /* trước là cam, giờ trắng */
+}
+
+.term-box .logo-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.5px;
+  margin: 0 0 -10px 0;
+  align-self: center;
+  background: #fff;            /* gạch _ màu trắng */
+  border-radius: 0;
+  animation: term-blink 1s steps(1) infinite;
+}
+
+@keyframes term-blink {
+  0%, 50%   { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+[data-theme="light"] .nav-logo,
+[data-theme="light"] .term-box,
+[data-theme="light"] .term-prompt {
+  color: #1f1f1f;                /* chữ Truong Chinh, > đều màu tối */
+}
+
+[data-theme="light"] .term-box .logo-cursor {
+  background: #1f1f1f;           /* gạch _ màu tối */
+}
