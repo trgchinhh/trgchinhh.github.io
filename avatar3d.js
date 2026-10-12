@@ -111,9 +111,10 @@ function buildCharacter() {
   rim(1.15);
   add('glasses', 0, 9.5, 2.78, 0.8, 0.14, 0.14);
   [-1, 1].forEach((s) => {
-    add('glasses', s * 2.5, 9.35, 2.78, 1.1, 0.12, 0.14);   // nối tới thái dương
-    add('glasses', s * 3.03, 9.35, 0.8, 0.1, 0.12, 2.0);    // gọng ôm tai
-  });
+  add('glasses', s * 2.5, 9.35, 2.78, 1.1, 0.12, 0.14);    // nối tới thái dương
+  add('glasses', s * 3.03, 9.35, 1.3, 0.1, 0.12, 3.1);     // gọng dọc má: z từ -0.25 → 2.85, chạm thanh nối phía trước
+  add('glasses', s * 3.03, 8.95, -0.2, 0.1, 0.9, 0.2);     // đầu gọng cong xuống ôm tai
+});
 
   // Giọt mồ hôi (chỉ hiện khi nói "Nhức đầu quá")
   const sweat = new THREE.Group();
