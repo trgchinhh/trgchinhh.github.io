@@ -7,7 +7,7 @@ function setTheme(t) {
   root.setAttribute('data-theme', t);
   localStorage.setItem('theme', t);
   //themeIcon.className = t === 'dark' ? 'ph-bold ph-sun-horizon' : 'ph-bold ph-moon';
-  themeIcon.className = t === 'dark' ? 'ph-bold ph-moon' : 'ph-bold ph-sun';
+  themeIcon.className = t === 'dark' ? 'ph-bold ph-sun' : 'ph-bold ph-moon';
 }
 
 // Init
