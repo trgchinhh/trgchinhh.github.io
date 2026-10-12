@@ -13,12 +13,8 @@ const INFO = [
   {
     id: "b1",
     content: `
-<h2>Giới thiệu</h2>
-<p>
-<strong>Nguyễn Trường Chinh</strong>, sinh viên năm 3 ngành Công nghệ thông tin trường Đại học Công nghệ Sài Gòn (STU)
-</p>
 
-<h2>Thành tích</h2>
+<h2 style="margin-top: 20px;">Thành tích</h2>
 <div id="achievementList"></div>
 
 <h2>Lĩnh vực quan tâm</h2>

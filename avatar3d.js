@@ -360,7 +360,7 @@ const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
   const RADIUS = 18;
   let theta = 0.9;
   let phi = Math.acos(5.5 / 17.9);
-  let zoom = 1;
+  let zoom = 0.8;
 
   const MIN_ZOOM = 0.1;
   const MAX_ZOOM = 3;
@@ -414,13 +414,13 @@ const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
   }, { passive: false, capture: true });
 
   // ── HỘP THOẠI (nói theo tình huống) ──
-  const DIALOGUE_BOTTOM = '96%';   // vị trí hộp thoại so với đáy ô (tăng = lên cao hơn)
+  const DIALOGUE_BOTTOM = '94%';   // vị trí hộp thoại so với đáy ô (tăng = lên cao hơn)
   const HOLD_MS = 4000;            // giữ chữ trên màn hình bao lâu
   const TYPE_MS = 75;              // tốc độ gõ từng chữ
   const BACK_MS = 45;              // tốc độ xóa (backspace)
 
   const LINE_INTRO = 'Chóng mặt quá';   // sau khi xoay mở đầu
-  const LINE_HELLO = 'Xin chào, mình Trường Chinh'; // nói tiếp nếu không bị lắc
+  const LINE_HELLO = 'Xin chào, mình tên Trường Chinh'; // nói tiếp nếu không bị lắc
   const LINE_CUSTOM = 'Đây là mình trong hình dạng Voxel';  // <-- ĐIỀN CÂU CỦA BẠN VÀO ĐÂY (nói ngay sau lời chào; để trống thì bỏ qua)
   const SHAKE_LINES = ['Nhức đầu quá', 'Đừng có lắc nữa mà huhu !!!']; // khi bị lắc: câu 1, nếu còn lắc thì câu 2, rồi lặp lại
   const IDLE_LINES = ['Code gì lỗi quài', 'Fix mãi không hết !!!']; // lúc bình thường, nói lần lượt

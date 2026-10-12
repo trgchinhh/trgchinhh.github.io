@@ -115,7 +115,7 @@ nav {
 section { padding: 80px 0; }
 
 /* ── MAIN ── */
-.main-view { display: block; padding-top: 100px; }
+.main-view { display: block; padding-top: 80px; }
 
 .info-avatar-top {
   display: flex; justify-content: center;
@@ -257,4 +257,39 @@ footer {
 /* ── RESPONSIVE ── */
 @media (max-width: 600px) {
   section { padding: 56px 0; }
+}
+
+.avatar-wrap {
+  position: relative;
+  width: min(94vw, 560px);
+  height: min(70vw, 390px);
+  margin: 0 auto;
+  cursor: grab;
+}
+
+/* Hộp giới thiệu kiểu kính mờ */
+.avatar-intro {
+  position: absolute;
+  left: 12px; right: 12px; bottom: 0px;
+  z-index: 3;
+  padding: 14px 20px;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  backdrop-filter: blur(14px) saturate(140%);
+  pointer-events: none; /* kéo/cuộn xuyên qua hộp vẫn xoay/zoom được nhân vật */
+}
+[data-theme="dark"] .avatar-intro {
+  background: rgba(60, 60, 60, 0.55);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.avatar-intro strong { color: var(--accent); }
+
+@media (max-width: 600px) {
+  .avatar-intro { font-size: 0.82rem; padding: 10px 14px; }
 }
