@@ -15,7 +15,7 @@ const INFO = [
     content: `
 <h2>Giới thiệu</h2>
 <p>
-Mình là <strong>Trường Chinh</strong>, sinh viên năm 3 ngành Công nghệ thông tin trường Đại học Công nghệ Sài Gòn (STU).
+<strong>Nguyễn Trường Chinh</strong>, sinh viên năm 3 ngành Công nghệ thông tin trường Đại học Công nghệ Sài Gòn (STU)
 </p>
 
 <h2>Thành tích</h2>
