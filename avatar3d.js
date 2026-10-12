@@ -365,8 +365,18 @@ const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 
   const MIN_ZOOM = 0.1;
   const MAX_ZOOM = 3;
-  const AUTO_SPEED = 0.35;
-
+  const AUTO_SPEED = 0.20;
+  // const DRAG_SENS = 0.009;   // độ nhạy kéo (cũ 0.008). Muốn nhạy nữa thì 0.022–0.025
+  // const FLING_MAX = 14;      // vận tốc quán tính tối đa khi thả (rad/giây)
+  const DRAG_GAIN = 1.0;     // 1.0 = bám sát chuột, 1.3 = nhạy hơn
+  const MODEL_RADIUS = 1.5;  // bán kính thật của nhân vật (đã nhân scale 0.44)
+  const dragSens = () => {
+    const pxPerUnit = (host.clientHeight / VIEW_H) * zoom;
+    return DRAG_GAIN / (pxPerUnit * MODEL_RADIUS);   // rad trên mỗi px
+  };
+  const FLING_MAX = 15;       // quán tính vừa phải sau khi thả
+  let dragVel = 0;           // vận tốc xoay lúc kéo
+  let lastMoveT = 0;
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   let dragging = false;
@@ -383,6 +393,8 @@ const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
 
   el.addEventListener('pointerdown', (e) => {
     dragging = true;
+    dragVel = 0;
+    lastMoveT = performance.now();
     if (!introDone) { introDone = true; idleAt = performance.now() + 3000; }
     lastX = e.clientX;
     lastY = e.clientY;
@@ -396,11 +408,21 @@ const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
     lastX = e.clientX;
     lastY = e.clientY;
     shake += Math.hypot(dx, dy);
-    lastDragAt = performance.now();
-    theta -= dx * 0.008;
-    phi = clamp(phi - dy * 0.008, 0.2, Math.PI - 0.2);
+    const now = performance.now();
+    lastDragAt = now;
+
+    const s = dragSens();
+theta -= dx * s;
+phi = clamp(phi - dy * s * 0.5, 0.2, Math.PI - 0.2);
+
+const dtMove = Math.max(0.008, (now - lastMoveT) / 1000);
+lastMoveT = now;
+dragVel = dragVel * 0.6 + (dx * s / dtMove) * 0.4;
   });
   const endDrag = () => {
+    if (dragging && performance.now() - lastMoveT < 80) {
+      spin = clamp(dragVel, -FLING_MAX, FLING_MAX); // thả ra vẫn xoay tiếp rồi giảm dần về AUTO_SPEED
+    }
     dragging = false;
     el.style.cursor = 'grab';
   };
