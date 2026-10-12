@@ -2,7 +2,7 @@ import * as THREE from 'three';
 
 const PALETTE = {
   // nhân vật
-  hair:        0x33261f,
+  hair:        0x121214,
   skin:        0xeec29f,
   blush:       0xf2a392,
   shirt:       0xf2f0ec,
