@@ -226,7 +226,7 @@ function buildCharacter() {
   [[2.1, 1.8], [1.75, 2.4], [1.4, 1.2], [1.05, 2.0]].forEach(([y, w]) => {
     addL('screenLine', -1.7 + w / 2, y, -0.11, w, 0.1, 0.03);
   });
-  addL('accent', 0, 1.0, 0.1, 0.8, 0.8, 0.05); // sticker sau lưng màn hình
+  //addL('accent', 0, 1.0, 0.1, 0.8, 0.8, 0.05); // sticker sau lưng màn hình
 
   // ───────────── CỐC NƯỚC PIXEL (bên phải) ─────────────
   const MX = 3.6;
