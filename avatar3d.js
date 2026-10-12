@@ -637,4 +637,41 @@ const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
     requestAnimationFrame(frame);
   }
   requestAnimationFrame(frame);
+  
+  // Zoom bằng hai ngón tay trên mobile
+  let pinchStartDistance = 0;
+  let pinchStartZoom = zoom;
+
+  el.addEventListener('touchstart', (e) => {
+    if (e.touches.length === 2) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+
+      pinchStartDistance = Math.hypot(dx, dy);
+      pinchStartZoom = zoom;
+    }
+  }, { passive: true });
+
+  el.addEventListener('touchmove', (e) => {
+    if (e.touches.length !== 2 || pinchStartDistance === 0) return;
+
+    e.preventDefault();
+
+    const dx = e.touches[0].clientX - e.touches[1].clientX;
+    const dy = e.touches[0].clientY - e.touches[1].clientY;
+    const distance = Math.hypot(dx, dy);
+
+    zoom = clamp(
+      pinchStartZoom * (distance / pinchStartDistance),
+      MIN_ZOOM,
+      MAX_ZOOM
+    );
+  }, { passive: false });
+
+  el.addEventListener('touchend', (e) => {
+    if (e.touches.length < 2) {
+      pinchStartDistance = 0;
+    }
+  }, { passive: true });
 })();
+

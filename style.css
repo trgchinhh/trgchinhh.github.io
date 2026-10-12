@@ -293,3 +293,8 @@ footer {
 @media (max-width: 600px) {
   .avatar-intro { font-size: 0.82rem; padding: 10px 14px; }
 }
+
+#avatar3d,
+#avatar3d canvas {
+  touch-action: none;
+}
