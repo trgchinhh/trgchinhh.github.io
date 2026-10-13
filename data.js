@@ -43,11 +43,11 @@ const INFO = [
 <ul>
   <li><strong>Công cụ: </strong>Git, Github, Postman, Fork, Lazygit, Rg, FZF</li>
   <li><strong>Hệ điều hành chính: </strong>Windows 11 (25H2)</li>
-  <li><strong>Hệ điều hành máy ảo: </strong>Ubuntu 24 (Gnome), Arch install(KDE plasma)</li>
+  <li><strong>Hệ điều hành máy ảo: </strong>Ubuntu 24 (Gnome)</li>
   <li><strong>IDE: </strong>Visual Studio 2022</li>
   <li><strong>Text editor: </strong>Sublime Text (chính), Visual Studio Code (phụ)</li>
   <li><strong>Terminal: </strong>Windows Terminal - Shell: Powershell</li>
-  <li><strong>Khác: </strong>SSH, MobaXterm (điều khiển linux server)</li>
+  <li><strong>Khác: </strong>SSH, MobaXterm (điều khiển linux)</li>
 </ul>
 
 <h2>Các dự án</h2>
